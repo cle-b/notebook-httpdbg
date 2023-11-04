@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notebook-httpdbg"
+authors = [
+    {name = "cle-b", email = "cle@tictac.pm"},
+]
+description="A notebook extension to trace HTTP(S) requests."
+readme="README.md"
+urls = {repository = "https://github.com/cle-b/notebook-httpdbg"}
+requires-python = ">=3.7.0"
+license = {text = "Apache-2.0"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Framework :: Jupyter"
+]
+dynamic = ["version"]
+dependencies = [
+  "httpdbg >= 0.17.0",
+  "notebook"
+]
+
+[tool.setuptools]
+packages = ["notebook_httpdbg"]
+
+[tool.setuptools.dynamic]
+version = {attr = "notebook_httpdbg.VERSION"}
+
