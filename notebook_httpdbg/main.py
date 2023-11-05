@@ -158,16 +158,16 @@ def read_args(args: List[str]) -> argparse.Namespace:
     parser.add_argument(
         "--headers",
         type=int,
-        default=500,
-        metavar=500,
+        default=1000,
+        metavar=1000,
         help="Number of characters to display for the headers.",
     )
 
     parser.add_argument(
         "--body",
         type=int,
-        default=500,
-        metavar=500,
+        default=5000,
+        metavar=5000,
         help="Number of characters to display for the body.",
     )
 
