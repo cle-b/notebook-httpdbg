@@ -71,3 +71,7 @@ Out [3]: - [httpdbg] 1 requests in 0.48 seconds
                         <style type="text/css">
         
 ```
+
+## documentation
+
+A complete documentation is available [here](https://httpdbg-docs.readthedocs.io/en/latest/notebook/).
