@@ -74,4 +74,4 @@ Out [3]: - [httpdbg] 1 requests in 0.48 seconds
 
 ## documentation
 
-https://httpdbg-docs.readthedocs.io/en/latest/notebook/
+https://httpdbg.readthedocs.io/en/latest/notebook/
