@@ -9,16 +9,16 @@ authors = [
 ]
 description="A notebook extension to trace HTTP(S) requests."
 readme="README.md"
-urls = {repository = "https://github.com/cle-b/notebook-httpdbg"}
 requires-python = ">=3.7.0"
 license = {text = "Apache-2.0"}
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
-    "Framework :: Jupyter"
+    "Framework :: Jupyter",
+    "Framework :: IPython"
 ]
 dynamic = ["version"]
 dependencies = [
@@ -32,3 +32,6 @@ packages = ["notebook_httpdbg"]
 [tool.setuptools.dynamic]
 version = {attr = "notebook_httpdbg.VERSION"}
 
+[project.urls]
+Source = "https://github.com/cle-b/notebook-httpdbg/"
+Documentation = "https://httpdbg.readthedocs.io/"
