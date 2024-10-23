@@ -9,7 +9,7 @@ authors = [
 ]
 description="A notebook extension to trace HTTP(S) requests."
 readme="README.md"
-requires-python = ">=3.7.0"
+requires-python = ">=3.8.0"
 license = {text = "Apache-2.0"}
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -22,7 +22,7 @@ classifiers = [
 ]
 dynamic = ["version"]
 dependencies = [
-  "httpdbg >= 0.17.0",
+  "httpdbg >= 0.24.2",
   "notebook"
 ]
 
