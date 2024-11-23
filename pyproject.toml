@@ -22,7 +22,7 @@ classifiers = [
 ]
 dynamic = ["version"]
 dependencies = [
-  "httpdbg >= 0.24.2",
+  "httpdbg>=0.24.2,<0.28.0",
   "notebook"
 ]
 
