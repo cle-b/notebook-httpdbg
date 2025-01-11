@@ -23,9 +23,7 @@ jobs:
     needs: lint
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    environment:
-      name: pypi
-      url: https://pypi.org/p/lymbo
+    environment: release
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing 
     steps:
