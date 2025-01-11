@@ -43,7 +43,6 @@ jobs:
       if: >
         github.event_name == 'push' &&
         startsWith(github.ref, 'refs/tags') &&
-        github.base_ref == 'main' &&
         github.actor == github.repository_owner
       uses: actions/upload-artifact@v4
       with:
@@ -53,6 +52,5 @@ jobs:
       if: >
         github.event_name == 'push' &&
         startsWith(github.ref, 'refs/tags') &&
-        github.base_ref == 'main' &&
         github.actor == github.repository_owner
       uses: pypa/gh-action-pypi-publish@release/v1     
