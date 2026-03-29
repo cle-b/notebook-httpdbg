@@ -5,10 +5,10 @@ setup:
 	pip install -r requirements-dev.txt
 
 format:
-	black notebook_httpdbg
+	black notebook_httpdbg --target-version py39
 
 lint:
-	black --check notebook_httpdbg
+	black --check notebook_httpdbg --target-version py39
 	flake8 notebook_httpdbg
 
 check: lint
